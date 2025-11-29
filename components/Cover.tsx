@@ -53,33 +53,67 @@ export default function HomePage() {
       </motion.div>
 
       {/* HERO SECTION */}
-      <div className="relative w-full min-h-screen bg-gradient-to-br from-[#0d3d2b] to-black pt-24 md:pt-28 px-4 md:px-6">
+      <div className="relative w-full min-h-screen bg-gradient-to-br from-[#0d3d2b] to-black pt-24 md:pt-40 px-4 md:px-6">
 
-        {/* Floating circles */}
-        {[...Array(14)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full border border-white/30 absolute"
-            style={{ top: `${Math.random() * 90}%`, left: `${Math.random() * 90}%` }}
-            animate={{ y: [0, -8, 0], x: [0, 6, 0], opacity: [0.2, 0.7, 0.2] }}
-            transition={{ duration: 3 + Math.random() * 3, repeat: Infinity }}
-          />
-        ))}
+ {/* Floating circles (full-screen coverage) */}
+{[...Array(28)].map((_, i) => (
+  <motion.div
+    key={i}
+    className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full border border-white/30 absolute"
+    style={{
+      top: `${Math.random() * 100}vh`,
+      left: `${Math.random() * 100}vw`,
+    }}
+    animate={{
+      y: [0, -25, 15, -20, 0],
+      x: [0, 20, -15, 25, 0],
+      opacity: [0.1, 0.8, 0.4, 1, 0.3],
+      scale: [1, 1.25, 1, 1.4, 1]
+    }}
+    transition={{
+      duration: 4 + Math.random() * 4,
+      repeat: Infinity
+    }}
+  />
+))}
 
-        {/* TRIANGLES */}
-        {[...Array(10)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute opacity-40 md:opacity-50"
-            style={{ top: `${Math.random() * 85}%`, left: `${Math.random() * 85}%` }}
-            animate={{ rotate: [0, 160, 0], y: [0, 10, 0] }}
-            transition={{ duration: 6 + Math.random() * 3, repeat: Infinity }}
-          >
-            <svg width="10" height="10" className="md:w-[14px] md:h-[14px]" viewBox="0 0 100 100" fill="none">
-              <polygon points="50,10 90,90 10,90" stroke="white" strokeWidth="5" />
-            </svg>
-          </motion.div>
-        ))}
+{/* Triangles (full-screen coverage) */}
+{[...Array(22)].map((_, i) => (
+  <motion.div
+    key={i}
+    className="absolute opacity-40 md:opacity-50"
+    style={{
+      top: `${Math.random() * 100}vh`,
+      left: `${Math.random() * 100}vw`,
+    }}
+    animate={{
+      rotate: [0, 120, 240, 360],
+      y: [0, 20, -12, 22, 0],
+      x: [0, -18, 14, -22, 0],
+      opacity: [0.2, 0.5, 0.8, 0.45, 0.25],
+    }}
+    transition={{
+      duration: 6 + Math.random() * 4,
+      repeat: Infinity,
+    }}
+  >
+    <svg
+      width="14"
+      height="14"
+      className="md:w-[20px] md:h-[20px]"
+      viewBox="0 0 100 100"
+      fill="none"
+    >
+      <polygon 
+        points="50,10 90,90 10,90" 
+        stroke="white" 
+        strokeWidth="5" 
+      />
+    </svg>
+  </motion.div>
+))}
+
+
 
         {/* HERO TEXT */}
         <div className="text-center">
@@ -113,7 +147,7 @@ export default function HomePage() {
             transition={{ duration: 1.3 }}
             className="scale-[0.75] md:scale-100"
           >
-            <Image src="/la.png" width={440} height={310} alt="Laptop" className="drop-shadow-2xl" />
+            <Image src="/la.png" width={480} height={310} alt="Laptop" className="drop-shadow-2xl" />
           </motion.div>
 
           {/* Mobile */}
@@ -169,7 +203,7 @@ export default function HomePage() {
         {/* CENTER MOBILE + ICONS */}
         <div className="relative flex justify-center items-center min-h-[400px] md:min-h-[500px]">
           <motion.div initial={{ opacity: 0, scale: 0.88 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative z-20 scale-[0.8] md:scale-100">
-            <Image src="/each.png" width={240} height={600} alt="Mobile" className="drop-shadow-xl" />
+            <Image src="/new.png" width={280} height={600} alt="Mobile" className="drop-shadow-xl" />
           </motion.div>
 
           {features.map((item, i) => (
