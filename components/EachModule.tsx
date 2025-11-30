@@ -4,60 +4,61 @@ import { motion } from "framer-motion";
 
 const sections = [
   {
-    tag: "Attendance",
-    title: "Smart Attendance Tracking",
-    desc: "Track student attendance in real-time with accurate daily, weekly, and monthly reports.",
+    tag: "Smart Admission",
+    title: "Seamless Online Student Enrollment",
+    desc: "Smart Admission digitizes your entire admission workflow. Schools can collect student details, verify documents, manage approvals, and track application status—all in one place. Parents can register from anywhere, making the admission process faster, transparent, and hassle-free.",
     img: "/33.png",
   },
   {
-    tag: "Marks Report",
-    title: "Detailed Academic Performance",
-    desc: "View complete marks reports, subject-wise scores, and progress analytics for each student.",
+    tag: "QuickAttendance",
+    title: "Real-Time Attendance Tracking",
+    desc: "QuickAttendance helps teachers mark attendance in seconds. The system automatically records daily presence, late entries, and absences and updates parents instantly. Schools can also generate insightful attendance reports for classes, sections, and individual students.",
     img: "/11.png",
   },
   {
-    tag: "Admission",
-    title: "Digital Admission Process",
-    desc: "Manage student admissions, form submissions, approvals, and verification seamlessly.",
+    tag: "WorkHub",
+    title: "Effortless Homework & Assignment Management",
+    desc: "WorkHub simplifies the way teachers assign, students submit, and parents track homework. Teachers can upload worksheets, share deadlines, and review submissions, while students receive timely reminders to stay on track.",
     img: "/77.png",
   },
   {
-    tag: "Fees",
-    title: "Online Fee Management",
-    desc: "Students and parents can view fee structures, pay online, and download payment receipts anytime.",
+    tag: "CampusFeed",
+    title: "Daily College & School Updates, All in One Place",
+    desc: "CampusFeed acts as a live notice board for your school. Share announcements, events, achievements, circulars, and important updates instantly with students and parents. No more missed messages—everyone stays informed in real time.",
     img: "/44.png",
   },
   {
-    tag: "Workshop Registration",
-    title: "One-Click Workshop Registration",
-    desc: "Register for events, seminars, and workshops easily with automated confirmations.",
+    tag: "ConnectBot",
+    title: "Smart Parent–Teacher Communication",
+    desc: "ConnectBot enables smooth communication between teachers and parents. With intelligent chat assistance, queries are answered instantly, meetings can be scheduled, and teachers can send personalized updates. It strengthens the bridge between home and school.",
     img: "/66.png",
   },
   {
-    tag: "Certificates",
-    title: "Instant Certificate Downloads",
-    desc: "Download course certificates, participation certificates, and academic documents instantly.",
+    tag: "ScoreTrack",
+    title: "Instant Marks, Grades & Performance Reports",
+    desc: "ScoreTrack offers a clear overview of every student’s academic progress. Teachers can upload marks, generate report cards, and analyze performance trends, while parents can check results anytime with complete transparency.",
     img: "/55.png",
   },
   {
-    tag: "Assignments",
-    title: "Assignment Submission & Tracking",
-    desc: "Submit assignments, view deadlines, and track evaluation updates from teachers.",
+    tag: "EventEnroll",
+    title: "Easy Workshop & Event Registrations",
+    desc: "EventEnroll makes it simple for students and parents to sign up for school workshops, seminars, celebrations, and other events. It handles registrations, waitlists, confirmations, and reminders—ensuring smooth event management.",
     img: "/22.png",
   },
   {
-    tag: "Parent-Teacher Chat",
-    title: "Secure Parent & Teacher Messaging",
-    desc: "A dedicated communication channel for parents and teachers to discuss student progress.",
+    tag: "FeeDesk",
+    title: "Secure and Simple Fee Payments",
+    desc: "FeeDesk provides a safe platform for parents to pay tuition fees, exam fees, and other charges online. It supports multiple payment modes, offers instant receipts, and helps schools track payment history effortlessly.",
     img: "/88.png",
   },
   {
-    tag: "News Feed",
-    title: "Latest Updates & Announcements",
-    desc: "Stay updated with all important college news, notices, and alerts in one central feed.",
+    tag: "CertifyNow",
+    title: "One-Click Certificate Requests",
+    desc: "CertifyNow allows students to request transfer certificates, bonafide letters, or any other official documents with just one click. Schools can verify, process, and deliver certificates digitally, reducing manual workload.",
     img: "/d.png",
   },
 ];
+
 
 export default function AnimatedAlternatingLayout() {
   return (
